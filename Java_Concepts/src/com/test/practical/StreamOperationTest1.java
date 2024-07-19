@@ -30,6 +30,7 @@ public class StreamOperationTest1 {
 		
 		//group by
 		Map<String, List<Employee>> myMap = empList.stream().collect(Collectors.groupingBy(Employee::getName,Collectors.toList()));
+		Map<String, List<Employee>> myMap2 = empList.stream().collect(Collectors.groupingBy(Employee::getName));
 		System.out.println("\nprinting grouping results");
 		System.out.println(myMap);
 		

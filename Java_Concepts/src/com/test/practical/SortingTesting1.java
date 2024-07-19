@@ -29,7 +29,7 @@ public class SortingTesting1 {
 		fullEmpList1.forEach(a -> System.out.println(a.getName()));
 		
 		//List.sort for reverse sorting
-		fullEmpList1.sort(Comparator.comparing(Employee::getName));
+		fullEmpList1.sort(Comparator.comparing(Employee::getName).reversed());
 		
 		//Collections.sort with List<String>
 		List<String> empList = Arrays.asList("neeraj", "ram","ajay", "sam" ,"bimal");
