@@ -48,7 +48,10 @@ public class PaymentGatewayExample1 {
     	//Note: Other solution could be below:
     	//On Windows: Windows -> Preferences -> Java -> Compiler -> Errors/Warnings 
     	//-> Deprecated and restricted API -> Forbidden reference (access rules): -> change to warning
-    	Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
+    	
+    	
+    	
+    	//Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
         
     	System.setProperty("java.protocol.handler.pkgs", "com.sun.net.ssl.internal.www.protocol");
         System.out.println(sendXml(createXML()));
