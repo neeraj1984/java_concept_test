@@ -61,6 +61,7 @@ public class SortingTesting1 {
 		List<Employee> sortedEmpList = fullEmpList3.stream().sorted((emp1, emp2) -> emp1.getName().compareTo(emp2.getName())).collect(Collectors.toList());
 		System.out.println("sorted with stream.sorted for list<Employee>");
 		sortedEmpList.forEach(emp -> System.out.println(emp.getName()));
+
 	}
 
 }
