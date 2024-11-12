@@ -5,6 +5,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.test.stream.Staff;
+
 public class DataAccessUtil {
 
 	
@@ -58,5 +60,36 @@ public class DataAccessUtil {
 		empList.add(e);
 		
 		return empList;
+	}
+	
+	public static List<Staff> getStaff(){
+		List<Staff> staffList = new ArrayList<Staff>();
+		Staff staff = null;
+		
+		staff = new Staff("Rakesh", 1201, 35890.0, "Kanpur");		
+		staffList.add(staff);
+		
+		staff = new Staff("Tarun", 1202, 45001.0, "Delhi");		
+		staffList.add(staff);
+		
+		staff = new Staff("Lekha", 1390, 19990.0, "Rampur");		
+		staffList.add(staff);
+		
+		staff = new Staff("Amit", 1382, 41900.0, "Noida");		
+		staffList.add(staff);
+		
+		staff = new Staff("Lalit", 1481, 51200.0, "Kanpur");		
+		staffList.add(staff);
+		
+		staff = new Staff("Madhu", 1518, 24900.0, "Lucknow");		
+		staffList.add(staff);
+		
+		staff = new Staff("Samar", 1278, 38300.0, "Noida");		
+		staffList.add(staff);
+		
+		staff = new Staff("Bablu", 1599, 33750.0, "Delhi");		
+		staffList.add(staff);
+		
+		return staffList;
 	}
 }
