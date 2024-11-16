@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.stream.Collectors;
 import java.util.Set;
 import static java.util.stream.Collectors.*;
 import static java.util.Map.Entry.*;
@@ -49,7 +50,8 @@ public class MapSoring {
 		}
 		
 		
-		
+		//use Collectors.toMap() or toMap()
+		//below collect() will take 4 param
 		Map<String, Integer> sorted = budget.entrySet().stream().sorted(comparingByKey()) 
 				.collect( toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2, LinkedHashMap::new));
 
