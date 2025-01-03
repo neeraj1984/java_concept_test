@@ -42,3 +42,13 @@ public class CallableExample {
 	}
 
 }
+
+class TestClass implements Callable<String>{
+
+	@Override
+	public String call() throws Exception {
+		// TODO Auto-generated method stub
+		return "hello callable";
+	}
+	
+}
